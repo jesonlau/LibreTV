@@ -27,49 +27,154 @@ const API_SITES = {
         name: '空内容测试源',
         adult: true
     },
-    maotaiResource: {  // 你已添加的茅台资源
-        api: 'https://caiji.maotaizy.cc/api.php/provide//vod',
+    maotaiResource: {  // 之前：茅台资源
+        api: 'https://caiji.maotaizy.cc/api.php/provide/vod',  // 清理双//
         name: '茅台资源',
         adult: false
     },
-    hongniuResource: {  // 红牛资源
+    hongniuResource: {  // 之前：红牛资源
         api: 'https://www.hongniuzy2.com/api.php/provide/vod',
         name: '红牛资源',
         adult: false
     },
-    guangsuResource: {  // 光速资源
+    guangsuResource: {  // 之前：光速资源
         api: 'https://api.guangsuapi.com/api.php/provide/vod',
         name: '光速资源',
         adult: false
     },
-    doubanResource: {  // 豆瓣资源
-        api: 'https://caiji.dbzy5.com/api.php/provide//vod',
+    doubanResource: {  // 之前：豆瓣资源
+        api: 'https://caiji.dbzy5.com/api.php/provide/vod',  // 清理双//
         name: '豆瓣资源',
         adult: false
     },
-    xinlangResource: {  // 新浪资源
+    xinlangResource: {  // 之前：新浪资源
         api: 'https://api.xinlangapi.com/xinlangapi.php/provide/vod',
         name: '新浪资源',
         adult: false
     },
-    jisuResource: {  // 极速资源
+    jisuResource: {  // 之前：极速资源
         api: 'https://jszyapi.com/api.php/provide/vod',
         name: '极速资源',
         adult: false
     },
-    ukuResource: {  // U酷资源
+    ukuResource: {  // 之前：U酷资源
         api: 'https://api.ukuapi88.com/api.php/provide/vod',
         name: 'U酷资源',
         adult: false
     },
-    jinyingResource: {  // 金鹰资源（注意：路径无api.php，如果不兼容可反馈调整）
+    jinyingResource: {  // 之前：金鹰资源
         api: 'https://jyzyapi.com/provide/vod',
         name: '金鹰资源',
         adult: false
     },
-    wolongResource: {  // 卧龙资源
+    wolongResource: {  // 之前：卧龙资源
         api: 'https://collect.wolongzy.cc/api.php/provide/vod',
         name: '卧龙资源',
+        adult: false
+    },
+    suboResource: {  // 新：速播资源
+        api: 'https://subocj.com/api.php/provide/vod',
+        name: '速播资源',
+        adult: false
+    },
+    luxuryResource: {  // 新：豪华资源
+        api: 'https://hhzyapi.com/api.php/provide/vod',
+        name: '豪华资源',
+        adult: false
+    },
+    huyaResource: {  // 新：虎牙资源
+        api: 'https://www.huyaapi.com/api.php/provide/vod',
+        name: '虎牙资源',
+        adult: false
+    },
+    xingyunResource: {  // 新：幸资源站（成人）
+        api: 'https://xzybb1.com/api.php/provide/vod',
+        name: '幸资源站',
+        adult: true  // 已改为 true
+    },
+    kubaoResource: {  // 新：快播资源（成人）
+        api: 'https://gayapi.com/api.php/provide/vod',
+        name: '快播资源',
+        adult: true  // 已改为 true
+    },
+    xingbaResource: {  // 新：杏吧资源（成人）
+        api: 'https://xingba111.com/api.php/provide/vod',
+        name: '杏吧资源',
+        adult: true  // 已改为 true
+    },
+    jiananResource: {  // 新：建安资源 (HTTP)
+        api: 'http://154.219.117.232:9981/jacloudapi.php/provide/vod',
+        name: '建安资源',
+        adult: false
+    },
+    tiyaResource: {  // 新：天涯影视
+        api: 'https://tyyszyapi.com/api.php/provide/vod',
+        name: '天涯影视',
+        adult: false
+    },
+    iqiyiResource: {  // 新：爱奇艺资源
+        api: 'https://www.iqiyizyapi.com/api.php/provide/vod',
+        name: '爱奇艺资源',
+        adult: false
+    },
+    jinmaResource: {  // 新：金马资源
+        api: 'https://api.jmzy.com/api.php/provide/vod',  // 去除末尾/
+        name: '金马资源',
+        adult: false
+    },
+    dianyingResource: {  // 新：电影天堂 (HTTP)
+        api: 'http://caiji.dyttzyapi.com/api.php/provide/vod',
+        name: '电影天堂',
+        adult: false
+    },
+    baiduResource: {  // 新：百度资源
+        api: 'https://api.apibdzy.com/api.php/provide/vod',
+        name: '百度资源',
+        adult: false
+    },
+    fenchaoResource: {  // 新：蜂巢片库
+        api: 'https://api.fczy888.me/api.php/provide/vod',
+        name: '蜂巢片库',
+        adult: false
+    },
+    mozhuaResource: {  // 新：魔爪资源
+        api: 'https://mozhuazy.com/api.php/provide/vod',
+        name: '魔爪资源',
+        adult: false
+    },
+    ruyiResource: {  // 新：如意资源
+        api: 'https://cj.rycjapi.com/api.php/provide/vod',
+        name: '如意资源',
+        adult: false
+    },
+    fanqieResource: {  // 新：番茄资源
+        api: 'https://fqzy.me/api.php/provide/vod',  // 清理双//
+        name: '番茄资源',
+        adult: false
+    },
+    heimuResource: {  // 新：黑木耳资源
+        api: 'https://json.heimuer.xyz/api.php/provide/vod',
+        name: '黑木耳资源',
+        adult: false
+    },
+    yayaResource: {  // 新：丫丫资源
+        api: 'https://cj.yayazy.net/api.php/provide/vod',
+        name: '丫丫资源',
+        adult: false
+    },
+    linglingResource: {  // 新：360资源
+        api: 'https://360zyzz.com/api.php/provide/vod',
+        name: '360资源',
+        adult: false
+    },
+    aikunResource: {  // 新：爱坤联盟
+        api: 'https://www.jkunzyapi.com/api.php/provide/vod',  // 去除末尾/
+        name: '爱坤联盟',
+        adult: false
+    },
+    aosikaResource: {  // 新：奥斯卡
+        api: 'https://asoikazy.com/api.php/provide/vod',
+        name: '奥斯卡',
         adult: false
     }
     //ARCHIVE https://telegra.ph/APIs-08-12
