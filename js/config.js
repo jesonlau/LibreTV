@@ -26,6 +26,11 @@ const API_SITES = {
         api: 'https://www.example.com/api.php/provide/vod',
         name: '空内容测试源',
         adult: true
+    },
+    maotaiResource: {  // 新添加的源，键名随意（如 maotaiResource）
+        api: 'https://caiji.maotaizy.cc/api.php/provide//vod',  // 你的API URL
+        name: '茅台资源',  // 显示名称，可自定义
+        adult: false  // 是否成人内容？如果是黄色源设为 true；否则 false
     }
     //ARCHIVE https://telegra.ph/APIs-08-12
 };
