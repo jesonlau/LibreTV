@@ -27,10 +27,50 @@ const API_SITES = {
         name: '空内容测试源',
         adult: true
     },
-    maotaiResource: {  // 新添加的源，键名随意（如 maotaiResource）
-        api: 'https://caiji.maotaizy.cc/api.php/provide//vod',  // 你的API URL
-        name: '茅台资源',  // 显示名称，可自定义
-        adult: false  // 是否成人内容？如果是黄色源设为 true；否则 false
+    maotaiResource: {  // 你已添加的茅台资源
+        api: 'https://caiji.maotaizy.cc/api.php/provide//vod',
+        name: '茅台资源',
+        adult: false
+    },
+    hongniuResource: {  // 红牛资源
+        api: 'https://www.hongniuzy2.com/api.php/provide/vod',
+        name: '红牛资源',
+        adult: false
+    },
+    guangsuResource: {  // 光速资源
+        api: 'https://api.guangsuapi.com/api.php/provide/vod',
+        name: '光速资源',
+        adult: false
+    },
+    doubanResource: {  // 豆瓣资源
+        api: 'https://caiji.dbzy5.com/api.php/provide//vod',
+        name: '豆瓣资源',
+        adult: false
+    },
+    xinlangResource: {  // 新浪资源
+        api: 'https://api.xinlangapi.com/xinlangapi.php/provide/vod',
+        name: '新浪资源',
+        adult: false
+    },
+    jisuResource: {  // 极速资源
+        api: 'https://jszyapi.com/api.php/provide/vod',
+        name: '极速资源',
+        adult: false
+    },
+    ukuResource: {  // U酷资源
+        api: 'https://api.ukuapi88.com/api.php/provide/vod',
+        name: 'U酷资源',
+        adult: false
+    },
+    jinyingResource: {  // 金鹰资源（注意：路径无api.php，如果不兼容可反馈调整）
+        api: 'https://jyzyapi.com/provide/vod',
+        name: '金鹰资源',
+        adult: false
+    },
+    wolongResource: {  // 卧龙资源
+        api: 'https://collect.wolongzy.cc/api.php/provide/vod',
+        name: '卧龙资源',
+        adult: false
     }
     //ARCHIVE https://telegra.ph/APIs-08-12
 };
